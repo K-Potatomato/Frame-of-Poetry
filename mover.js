@@ -23,23 +23,23 @@ class Mover{
     }
   }
   colorset() {
-    if (keyCode === UP_ARROW && this.position.x <= 400 && this.position.x >= 100 && this.position.y<= 400 && this.position.y >= 100){
+    if (keyCode === UP_ARROW && this.position.x <= width/2+140 && this.position.x >= width/2-140 && this.position.y<= height/2+140 && this.position.y >= height/2-140){
     fill(204,155+10,255);
     }
-  else if (keyCode ===RIGHT_ARROW&& this.position.x <= 400 && this.position.x >= 100 && this.position.y<= 400 && this.position.y >= 100){
+  else if (keyCode ===RIGHT_ARROW&& this.position.x <= width/2+140 && this.position.x >= width/2-140 && this.position.y<= height/2+140 && this.position.y >= height/2-140){
     fill(255,204,102+10);
     }
-   else if (keyCode ===LEFT_ARROW &&this.position.x <= 400 && this.position.x >= 100 && this.position.y<= 400 && this.position.y >= 100){
+   else if (keyCode ===LEFT_ARROW &&this.position.x <= width/2+140 && this.position.x >= width/2-140 && this.position.y<= height/2+140 && this.position.y >= height/2-140){
      fill(102+10,255,255);
    }
-    else if(keyCode ===DOWN_ARROW && this.position.x <= 400 && this.position.x >= 100 && this.position.y<= 400 && this.position.y >= 100){
+    else if(keyCode ===DOWN_ARROW && this.position.x <= width/2+140 && this.position.x >= width/2-140 && this.position.y<= height/2+140 && this.position.y >= height/2-140){
      fill(0,255,153+10);
     }
     else{
       fill(255,60);
     }
-
   }
+
 
   display() {
     noStroke();
