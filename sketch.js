@@ -55,7 +55,5 @@ function draw() {
     if(!bell.isPlaying()){
      bell.play();
     }
-  }else{
-   bell.pause();
   }
 }
