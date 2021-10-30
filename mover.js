@@ -26,16 +26,16 @@ class Mover{
   }
   colorset() {
     if (keyCode === UP_ARROW && this.position.x <= width/2+140 && this.position.x >= width/2-140 && this.position.y<= height/2+140 && this.position.y >= height/2-140){
-    fill(204,155+10,255,60);
+    fill(157,77,230,60);
     }
   else if (keyCode ===RIGHT_ARROW&& this.position.x <= width/2+140 && this.position.x >= width/2-140 && this.position.y<= height/2+140 && this.position.y >= height/2-140){
-    fill(255,204,102+10,60);
+    fill(60,60,212,60);
     }
    else if (keyCode ===LEFT_ARROW &&this.position.x <= width/2+140 && this.position.x >= width/2-140 && this.position.y<= height/2+140 && this.position.y >= height/2-140){
-     fill(102+10,255,255,60);
+     fill(62,103,41,60);
    }
     else if(keyCode ===DOWN_ARROW && this.position.x <= width/2+140 && this.position.x >= width/2-140 && this.position.y<= height/2+140 && this.position.y >= height/2-140){
-     fill(0,255,153+10,60);
+     fill(56,84,88,60);
     }
     else{
       fill(100,60);
@@ -52,13 +52,13 @@ class Mover{
       square(this.position.x, this.position.y,this.fs,random(1,3));
     }
     else if (keyCode ===LEFT_ARROW){
-     quad(this.position.x-this.ts,this.position.y,this.position.x, this.position.y -this.ts,this.position.x+this.ts,this.position.y ,this.position.x, this.position.y +this.ts)
+     square(this.position.x, this.position.y,this.fs,random(1,3));
     }
     else if(keyCode ===DOWN_ARROW){
       circle(this.position.x, this.position.y, this.fs);
       }
     else{
-      square(this.position.x, this.position.y,this.fs,random(1,3));
+      circle(this.position.x, this.position.y, this.fs);
     }
   }
   checkEdge() {
