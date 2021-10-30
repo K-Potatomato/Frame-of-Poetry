@@ -1,5 +1,6 @@
 let movers = [];
 let a = 30;
+let o = 20;
 
 function setup() {
   createCanvas(800,800);
@@ -20,19 +21,19 @@ function draw() {
   rotate(a);
   a = a+0.01;
   if (keyCode === UP_ARROW){
-    fill(213,176,244,100);
+    fill(213,176,244,o);
     rect(0, 0, 225);
   }
     else if (keyCode ===RIGHT_ARROW){
-     fill(128,128,192,100);
+     fill(128,128,192,o);
      square(0, 0, 225,75);
     }
     else if (keyCode ===LEFT_ARROW){
-     fill(158,206,136,100);
+     fill(158,206,136,o);
      square(0, 0, 225,75);
     }
     else if (keyCode ===DOWN_ARROW){
-      fill(132,170,176,100);
+      fill(132,170,176,o);
       circle(0, 0, 225);
       }
     pop();
