@@ -20,20 +20,20 @@ function draw() {
   rotate(a);
   a = a+0.01;
   if (keyCode === UP_ARROW){
-    fill(204,155,255,80);
+    fill(213,176,244,100);
     rect(0, 0, 225);
   }
     else if (keyCode ===RIGHT_ARROW){
-      fill(255,204,102,80);
-      square(0, 0, 250,90);
+     fill(128,128,192,100);
+     square(0, 0, 225,75);
     }
     else if (keyCode ===LEFT_ARROW){
-    fill(102,255,255,80);
-    quad(0-125,0,0, 0 -125,0+125,0 ,0, 0 +125)
+     fill(158,206,136,100);
+     square(0, 0, 225,75);
     }
     else if (keyCode ===DOWN_ARROW){
-      fill(0,255,153,80);
-      circle(0, 0, 250);
+      fill(132,170,176,100);
+      circle(0, 0, 225);
       }
     pop();
     for (let i = 0; i < movers.length; i++) {
