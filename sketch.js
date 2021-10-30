@@ -1,9 +1,17 @@
 let movers = [];
 let a = 30;
 let o = 20;
+let bell;
+let bs;
+
+function preload() {
+ bell = loadSound('ShipBell.mp3');
+ bs = loadSound('DolphineGodmode.mp3');
+}
 
 function setup() {
   createCanvas(800,800);
+  bs.play();
   for (let i = 0; i < 100; i++) {
      movers[i] = new Mover();
   }
@@ -42,5 +50,12 @@ function draw() {
     movers[i].colorset();
     movers[i].display();
     movers[i].checkEdge();
+  }
+  if (mouseIsPressed){
+    if(!bell.isPlaying()){
+     bell.play();
+    }
+  }else{
+   bell.pause();
   }
 }
