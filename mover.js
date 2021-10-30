@@ -15,7 +15,6 @@ class Mover{
     this.velocity.add(this.acceleration);
     this.position.add(this.velocity);
     if (mouseIsPressed){
-    this.acceleration = p5.Vector.sub(this.mouse,this.position);
     this.acceleration.setMag(random(0.4));
     this.velocity.add(this.acceleration);
     this.velocity.limit(this.topspeed);
